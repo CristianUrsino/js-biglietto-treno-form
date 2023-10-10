@@ -75,6 +75,14 @@ genera.addEventListener('click', function(){
     `;
 });
 
-// annulla.addEventListener('click',function(){
+annulla.addEventListener('click',function(){
+    document.getElementById('name').value = '';
+    document.getElementById('km').value = null;
+    document.getElementById('age').value = 'maggiorenne';
 
-// });
+    document.getElementById('nameText').innerHTML = '';
+    document.getElementById('ticketType').innerHTML = '';
+    document.getElementById('carriage').innerHTML = '';
+    document.getElementById('cp').innerHTML = '';
+    document.getElementById('price').innerHTML = '';
+});
