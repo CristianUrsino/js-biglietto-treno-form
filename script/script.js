@@ -41,7 +41,38 @@ genera.addEventListener('click', function(){
     else if(age === 'over65') price *= 0.6;
     console.log(price);
 
-   
+    document.getElementById('nameText').innerHTML = `
+    <strong>
+        ${name}
+    </strong>
+    `;
+
+    const i = Math.floor(Math.random() * 3);
+    document.getElementById('ticketType').innerHTML = `
+    <strong>
+        biglietto ${ticketType[i]} 
+    </strong>
+    `;
+
+    const carriage = Math.floor(Math.random() * 20);
+    document.getElementById('carriage').innerHTML = `
+    <strong>
+        ${carriage} 
+    </strong>
+    `;
+
+    const cp = Math.floor(Math.random() * 99999) + 10000;
+    document.getElementById('cp').innerHTML = `
+    <strong>
+        ${cp} 
+    </strong>
+    `;
+
+    document.getElementById('price').innerHTML = `
+    <strong>
+        ${price} 
+    </strong>
+    `;
 });
 
 // annulla.addEventListener('click',function(){
