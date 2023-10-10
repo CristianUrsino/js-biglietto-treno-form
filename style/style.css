@@ -1,0 +1,20 @@
+html body{
+    background-color: #b91550;
+}
+.my-b-pink{
+    border-color: #b91550 !important;
+}
+.my-color-pink{
+    color: #b91550 !important;
+
+}
+button,
+.dark-div{
+    font-weight: bold !important;
+    background-color: #cccccc !important;
+}
+section h1{
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}

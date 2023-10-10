@@ -10,30 +10,32 @@
 
 <body>
 
-    <section class="container"> 
+    <section class="container mb-5"> 
         <h1>CALCOLA PREZZO</h1>
-        <div class="container-fluid">
-            <div>
-                <div>
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" name="name">
+        <div class="container-fluid bg-light rounded-4 p-3  my-color-pink text-center">
+            <div class="row justify-content-around mb-5">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <label class="form-label " for="name">Nome</label>
+                    <input class="form-control my-b-pink" type="text" id="name" name="name">
                 </div>
-                <div>
-                    <label for="km">Km da percorrere</label>
-                    <input type="number" id="km" name="km" min="0">
+                <div class="col-2">
+                    <label class="form-label " for="km">Km da percorrere</label>
+                    <input class="form-control my-b-pink" type="number" id="km" name="km" min="0">
                 </div>
-                <div>
-                    <label for="age">età</label>
-                    <select name="age" id="age">
+                <div class="col-2">
+                    <label class="form-label " for="age">età</label>
+                    <select class="form-control my-b-pink" name="age" id="age">
                         <option value="maggiorenne">maggiorenne</option>
                         <option value="minorenne">minorenne</option>
                         <option value="over65">over 65</option>
                     </select>
                 </div>
+                <div class="col-1"></div>
             </div>
             <div>
-                <button class="btn border-warning">Genera</button>
-                <button class="btn border-secondary">Reset</button>
+                <button class="btn border-warning my-color-pink me-3">Genera</button>
+                <button class="btn border-secondary my-color-pink">Reset</button>
             </div>
             <div id="error"></div>
         </div>
@@ -41,28 +43,28 @@
 
     <section class="container">
         <h1>BIGLIETTO</h1>
-        <div class="container-fluid">
-            <h2>DETTAGLIO PASSEGGERI</h2>
-            <div class="row border-secondary">
-                <div class="bg-secondary col">
-                    <h2>NOME PASSEGGERO</h2>
+        <div class="container-fluid bg-light p-4 ">
+            <h3>DETTAGLIO PASSEGGERI</h3>
+            <div class="row border-top border-bottom border-secondary">
+                <div class="bg-secondary col dark-div">
+                    <h5>NOME PASSEGGERO</h5>
                     <div id="nameText"></div>
                 </div>
                 <div class="col">
-                    <h4>offerta</h4>
-                    <div id="ticketType"></div>
+                    <strong>offerta</strong>
+                    <div id="ticketType" class="mt-5"></div>
                 </div>
                 <div class="col">
-                    <h4>Carrozza</h4>
-                    <div id="carriage"></div>
+                    <strong>Carrozza</strong>
+                    <div id="carriage" class="mt-5"></div>
                 </div>
                 <div class="col">
-                    <h4>Codice CP</h4>
-                    <div id="cp"></div>
+                    <strong>Codice CP</strong>
+                    <div id="cp" class="mt-5"></div>
                 </div>
                 <div class="col">
-                    <h4>Costo biglietto</h4>
-                    <div id="price"></div>
+                    <strong>Costo biglietto</strong>
+                    <div id="price" class="mt-5"></div>
                 </div>
             </div>
         </div>
