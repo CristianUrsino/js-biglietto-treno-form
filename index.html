@@ -10,9 +10,9 @@
 
 <body>
 
-    <section>
+    <section class="container"> 
         <h1>CALCOLA PREZZO</h1>
-        <form action="#" class="container">
+        <div class="container-fluid">
             <div>
                 <div>
                     <label for="name">Nome</label>
@@ -20,7 +20,7 @@
                 </div>
                 <div>
                     <label for="km">Km da percorrere</label>
-                    <input type="number" id="km" name="km">
+                    <input type="number" id="km" name="km" min="0">
                 </div>
                 <div>
                     <label for="age">età</label>
@@ -35,7 +35,8 @@
                 <button class="btn border-warning">Genera</button>
                 <button class="btn border-secondary">Reset</button>
             </div>
-        </form>
+            <div id="error"></div>
+        </div>
     </section>
 
     <section class="container">
@@ -66,6 +67,8 @@
             </div>
         </div>
     </section>
+    
 
+    <script src="script/script.js"></script>
 </body>
 </html>
